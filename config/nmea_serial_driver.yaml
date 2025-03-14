@@ -1,6 +1,8 @@
 nmea_navsat_driver:
   ros__parameters:
-    port: "/dev/ttyUSB0"
+    port: "/dev/ttyUSB1" #usb-FTDI_FT232R_USB_UART_BG011MQ5-if00-port0
+                          #usb-FTDI_FT232R_USB_UART_BG011NRA-if00-port0
+                          #UT-890A
     baud: 38400
     frame_id: "gps"
     time_ref_source: "gps"
