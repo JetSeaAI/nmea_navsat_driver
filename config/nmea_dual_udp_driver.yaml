@@ -1,0 +1,12 @@
+nmea_navsat_driver_garmin:
+  ros__parameters:
+    ip: "0.0.0.0"
+    port: 9002
+    buffer_size: 4096
+
+
+nmea_navsat_driver_saab:
+  ros__parameters:
+    ip: "0.0.0.0"
+    port: 9003
+    buffer_size: 4096
