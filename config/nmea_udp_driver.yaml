@@ -1,0 +1,5 @@
+garmin/navsat_garmin_node:
+  ros__parameters:
+    ip: "0.0.0.0"
+    port: 5106
+    buffer_size: 4096

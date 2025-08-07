@@ -1,7 +1,7 @@
 nmea_navsat_driver_garmin:
   ros__parameters:
     ip: "0.0.0.0"
-    port: 9002
+    port: 5106
     buffer_size: 4096
 
 
