@@ -31,6 +31,7 @@ def generate_launch_description():
         output='screen',
         name='navsat_garmin_node',
         namespace='garmin',
+        tf_prefix='going_jetsea',
         parameters=[config_file])
 
     return LaunchDescription([garmin_node])
