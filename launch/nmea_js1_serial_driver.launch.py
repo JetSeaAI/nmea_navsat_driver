@@ -51,6 +51,11 @@ def generate_launch_description():
         default_value='False',
         description='Whether to use RMC sentences for navigation data.'
     ),
+    DeclareLaunchArgument(
+        'tf_prefix',
+        default_value='',
+        description='A prefix to add to all TF frames published by the driver.'
+    )
 ]
     driver_node = actions.Node(
         package='nmea_navsat_driver',
@@ -62,7 +67,8 @@ def generate_launch_description():
             'baud': LaunchConfiguration('baud'),
             'frame_id': LaunchConfiguration('frame_id'),
             'time_ref_source': LaunchConfiguration('time_ref_source'),
-            'useRMC': LaunchConfiguration('useRMC')
+            'useRMC': LaunchConfiguration('useRMC'),
+            'tf_prefix': LaunchConfiguration('tf_prefix'),
         }]
     )
 

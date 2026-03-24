@@ -46,7 +46,11 @@ def generate_launch_description():
         default_value='1024',
         description='The buffer size for the GPS messages.'
     ),
-
+    DeclareLaunchArgument(
+        'tf_prefix',
+        default_value='',
+        description='A prefix to add to all TF frames published by the driver.'
+    )
 ]
     driver_node = actions.Node(
         package='nmea_navsat_driver',
@@ -59,6 +63,7 @@ def generate_launch_description():
             'port': LaunchConfiguration('gps_port'),
             'frame_id': LaunchConfiguration('frame_id'),
             'buffer_size': LaunchConfiguration('buffer_size'),
+            'tf_prefix': LaunchConfiguration('tf_prefix'),
         }]
     )
 
