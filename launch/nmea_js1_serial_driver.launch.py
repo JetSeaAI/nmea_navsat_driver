@@ -28,7 +28,7 @@ def generate_launch_description():
     description_actions = [
     DeclareLaunchArgument(
         'port',
-        default_value='/dev/ttyS0',
+        default_value='/dev/serial/by-id/usb-FTDI_FT231X_USB_UART_D30JIR5J-if00-port0',
         description='The serial port to which the GPS is connected.'
     ),
     DeclareLaunchArgument(
